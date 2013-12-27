@@ -1,0 +1,47 @@
+puts																								outputs a line of text and newline character
+#																										comment
++																										addition as well as concatenation of strings
+-																										subtraction
+*																										multiplication
+/																										division
+%																										modulo (divide & take remainder)
+<																										less-than
+>																										greater-than
+>=																									greater-than-or-equal
+<=																									less-than-or-equal
+=																										assignment.  variable = function-call
+#{}																									variable substitution within string
+%s																									substitute string within string
+%d																									substitute integer within string
+%, % [ ]																					  block of substitutions within string
+%o                                                  number substitution as octal within string
+%x																									number substitution as hexadecimal within string
+%e																									number substitution as scientific exponent within string
+%c																									character value for number or entire string within string
+print																								outputs text without a newline
+\n																									newline character
+<<TEXT ... TEXT																			textblock
+\t																									tab character
+\\																									escape character '\'
+gets.chomp()																				get contents of files passed through ARGV or defaults to $stdin, strips newline/EOF
+require																							imports other source file into ruby code
+open-uri open																				function in open-uri similar to File.open but opens the contents of a URI
+open-uri each_line																	function that yields each line of the contents retrieved in ::open 
+open-uri base_uri																		function that returns the base of the URI
+open-uri content_type																returns the mime-type of the contents retrieved in ::open
+open-uri charset																		returns the specified (or guessed) character set of contents from ::open
+open-uri content_encoding														returns content encoding
+open-uri last_modified															returns date URI was last modified
+ARGV																								array storing arguments passed to the program at runtime
+STDIN.gets.chomp()																	gets user input from STDIN and strips the newline character
+File.open(, 'w')																		opens a file and allows to set read/write options
+^(instance).read()																	reads the contents of the file opened
+^(instance).close()																	closes the file
+^(instance).truncate()															wipes the contents of the file
+STDIN.gets																					gets input from STDIN without stripping any characters
+ARGV.pop																						pops the last value off of the ARGV array.  Last argument passed to command at runtime
+*args																								pointer to the array of arguments passed to function
+def function(); block; end													definition of a function.  must include def, name(...), function block and end
+function(args)																			how you call a function
+File.seek(position, IO::SEEK_SET)										allows you to seek a specific position within an IO type and the seek method
+(implied) return																		makes functions useful.  Return values to whatever called the function.
