@@ -21,11 +21,7 @@ end
 elements = []
 
 # then use a range object to do 0 to 5 counts
-for i in (0..5)
-	puts "Adding #{i} to the list."
-	# push is a function that arrays understand
-	elements.push(i)
-end
+elements = (0..5).to_a
 
 # now we can puts them out too
 for i in elements
