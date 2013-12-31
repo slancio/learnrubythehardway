@@ -1,11 +1,12 @@
 i = 0
 numbers = []
 
-while i < 6
+count_to = (0..5).to_a
+
+for i in count_to
 	puts "At the top i is #{i}"
 	numbers.push(i)
 
-	i = i + 1
 	puts "Numbers now: #{numbers}"
 	puts "At the bottom i is #{i}"
 end
