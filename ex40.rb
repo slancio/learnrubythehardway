@@ -8,6 +8,12 @@ class Song
 			puts line
 		end
 	end
+
+	def sing_in_reverse()
+		reversed = @lyrics.reverse
+		@lyrics = reversed
+		self.sing_me_a_song()
+	end
 end
 
 happy_bday = Song.new(["Happy birthday to you",
@@ -15,8 +21,20 @@ happy_bday = Song.new(["Happy birthday to you",
 										"So I'll stop right there"])
 
 bulls_on_parade = Song.new(["They rally around the family",
-												"With pockets fall of shells"])
+												"With pockets full of shells"])
 
 happy_bday.sing_me_a_song()
 
 bulls_on_parade.sing_me_a_song()
+
+hhjj = ["Happy, happy, joy, joy!",
+				"Happy, happy, joy, joy!",
+				"Happy, happy, joy, joy!",
+				"Happy, happy, joy, joy!",
+				"Happy, happy, joy, joy!",
+				"Happy, happy, joy, joy!",
+				"Happy, happy, happy, happy, happy, happy, happy, happy, happy, happy, joy, joy, joy!"]
+
+happy_joy = Song.new(hhjj)
+happy_joy.sing_me_a_song()
+happy_joy.sing_in_reverse()
