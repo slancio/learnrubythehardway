@@ -30,13 +30,13 @@ class Lexicon
 		# iterate over array and check for existance in lexicon
 		wordlist.each do |word|
 			if @@lexi.has_key? word
-				pairs << create_pair(@@lexi[word], word)
+				pairs << Pair.new(@@lexi[word], word)
 			else
 				begin
 					num = Integer(word)
-					pairs << create_pair(:number, num)
+					pairs << Pair.new(:number, num)
 				rescue ArgumentError
-					pairs << create_pair(:error, word)
+					pairs << Pair.new(:error, word)
 					end
 			end
 		end
@@ -44,7 +44,4 @@ class Lexicon
 		pairs
 	end
 
-	def create_pair(token, word)
-		Pair.new(token, word)
-	end
 end
