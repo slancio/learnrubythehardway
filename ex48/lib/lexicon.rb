@@ -29,12 +29,11 @@ class Lexicon
 
 		# iterate over array and check for existance in lexicon
 		wordlist.each do |word|
-			if @@lexi.has_key? word
+			if @@lexi.has_key? word.downcase
 				pairs << Pair.new(@@lexi[word], word)
 			else
 				begin
-					num = Integer(word)
-					pairs << Pair.new(:number, num)
+					pairs << Pair.new(:number, Integer(word))
 				rescue ArgumentError
 					pairs << Pair.new(:error, word)
 					end
