@@ -15,7 +15,7 @@ puts "What kind of computer do you have?"
 print prompt
 computer = STDIN.gets.chomp()
 
-puts "What does my ass taste like?"
+puts "What does this taste like?"
 print prompt
 taste = STDIN.gets.chomp()
 
