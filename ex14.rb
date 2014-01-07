@@ -22,6 +22,6 @@ taste = STDIN.gets.chomp()
 puts <<MESSAGE
 Alright, so you said #{likes} about liking me.
 You live in #{lives}.  Not sure where that is.
-You think my ass tastes like #{taste}.  Weird.
+You think this tastes like #{taste}.  Weird.
 And you have a #{computer} computer.  Nice.
 MESSAGE
